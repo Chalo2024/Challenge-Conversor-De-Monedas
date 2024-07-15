@@ -13,7 +13,7 @@ public class Principal {
         ConvierteDatos conversor = new ConvierteDatos();
         Scanner teclado = new Scanner(System.in);
 
-        String menu = "********************************************\n"
+        String menu = """********************************************\n"
                 + "Sea bienvenido/a al Conversor de Divisas \n"
                 + "\n"
                 + "1) Dólar =>> Peso argentino\n"
@@ -24,7 +24,7 @@ public class Principal {
                 + "6) Peso colombiano =>> Dólar\n"
                 + "7) Salir\n"
                 + "Elija una opcion valida\n"
-                + "**********************************************";
+                + "**********************************************""";
         String solicitudAConvertir = "Ingresa la cantidad que deseas convertir";
 
         while (true) {
@@ -95,8 +95,6 @@ public class Principal {
                         + monedaBase + "] corresponde al valor final de =>>> $"
                         + resultado.setScale(2, RoundingMode.HALF_UP) + " [" + monedaDestino + "].");
 
-                var comprobacionResultado = conversion.conversion_result();
-                //System.out.println("Comprobacion del valor de: $"+montoUsuario+" ["+monedaBase+"] corresponde al valor final de =>>> $"+comprobacionResultado+" ["+monedaDestino+"].");
 
             } catch (InputMismatchException e) {
                 System.out.println("Acepta solo valores numericos, ejecuta de nuevo por favor");
