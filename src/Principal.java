@@ -14,7 +14,7 @@ public class Principal {
         Scanner teclado = new Scanner(System.in);
 
         String menu = "********************************************\n"
-                + "Sea bienvenido/a al Conversor de Monedas =]\n"
+                + "Sea bienvenido/a al Conversor de Divisas \n"
                 + "\n"
                 + "1) Dólar =>> Peso argentino\n"
                 + "2) Peso argentino =>> Dólar\n"
@@ -25,7 +25,7 @@ public class Principal {
                 + "7) Salir\n"
                 + "Elija una opcion valida\n"
                 + "**********************************************";
-        String solicitudAConvertir = "Ingresa la divisa que deseas convertir";
+        String solicitudAConvertir = "Ingresa la cantidad que deseas convertir";
 
         while (true) {
 
