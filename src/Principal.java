@@ -57,30 +57,33 @@ public class Principal {
                 String monedaDestino = "";
 
                 switch (solicitudUsuario) {
-                    case 1:
+                    case 1 ->
                         monedaBase = "USD";
                         monedaDestino = "ARS";
                         break;
-                    case 2:
+                    case 2 ->
                         monedaBase = "ARS";
                         monedaDestino = "USD";
                         break;
-                    case 3:
+                    case 3 ->
                         monedaBase = "USD";
                         monedaDestino = "BRL";
                         break;
-                    case 4:
+                    case 4 ->
                         monedaBase = "BRL";
                         monedaDestino = "USD";
                         break;
-                    case 5:
+                    case 5 ->
                         monedaBase = "USD";
                         monedaDestino = "COP";
                         break;
-                    case 6:
+                    case 6 ->
                         monedaBase = "COP";
                         monedaDestino = "USD";
                         break;
+
+                    default -> System.out.println("opcion no Valida");
+
                 }
 
                 URI direccion = URI.create(urlBase + apiKey + urlRespuesta + monedaBase + "/" + monedaDestino + "/" + montoUsuario);
